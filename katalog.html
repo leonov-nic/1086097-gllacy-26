@@ -5,18 +5,18 @@
 	<meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">    
-  <link rel="stylesheet" type="text/css" href="css/style.css">	
+  <link rel="stylesheet" type="text/css" href="css/style-comp.css">	
 </head>
 <body class="body-katalog">
 
    	<header class="container">
       <nav class="main-navigation">
-        <a class="main-logo" href="index.html"><img src="img/Logo.svg" width="154" height="62" alt="Логотип Глэйси"></a>
+        <a class="main-logo" href="index.html"><img src="img/logo.svg" width="154" height="62" alt="Логотип Глэйси"></a>
         <ul class="pages-navigation-list">
     	    <li class="pages-navigation-item pages-active"><a class="active" href="katalog.html">Каталог</a>
             <ul class="sub-pages-navigation-list">
               <li class="sub-pages-navigation-item"><a href="#">Новинки</a></li>
-              <li class="sub-pages-navigation-item"><a href="#">Сливочное</a></li>
+              <li class="sub-pages-navigation-item"><a class="katalog-active" href="#">Сливочное</a></li>
               <li class="sub-pages-navigation-item"><a href="https://htmlacademy.ru">Щербеты</a></li>
               <li class="sub-pages-navigation-item"><a href="#">Фруктовый лед</a></li>
               <li class="sub-pages-navigation-item"><a href="#">Мелорин</a></li>
@@ -44,11 +44,11 @@
                 <label for="password"></label>
                 <input id="password" type="password" name="password" value="" placeholder=".....">
               </p>             
-                <input class="button button-enters-form" type="submit" name="submit" value="Войти">
-                <p class="enters-form-text">
+              <input class="button button-enters-form" type="submit" name="submit" value="Войти">
+              <p class="enters-form-text">
                 <a class="" href="#">забыли пароль</a>
                 <a class="" href="#">новая регистрация</a>
-                </p>
+              </p>
             </form>
           </li>
           <li class="interactive-item">
@@ -106,7 +106,7 @@
       	  	<legend class="legend field-sort-heading">Сортировка:</legend>
       	  	<div class="sort-box">
       	  	  <select name="sort">
-      	  	    <option class="sort-option" value="выбор">По популярности</option>
+      	  	    <option class="sort-option" value="выбор">по популярности</option>
       	  	    <option class="sort-option" value="выбор">Сначала недорогие</option>
       	  	    <option class="sort-option" value="выбор">Сначала дорогие</option>
       	  	    <option class="sort-option" value="выбор">По жирности</option>
@@ -116,11 +116,11 @@
 
       	  <fieldset class="field-prise"> 
       	       	  	
-      	  	<legend class="legend field-prise-heading from-to">Цена:      	  	 
-              <label class="visually-hidden" for="from-number">от</label>
-              <input id="from-number" type="number" name="number" placeholder="100 руб.–"><span></span>
-              <label class="visually-hidden" for="to-number">до</label>
-              <input id="to-number" type="number" name="number" placeholder="500 руб.">
+      	  	<legend class="legend field-prise-heading from-to">      	  	 
+              <label for="from-number">Цена: <span class="visually-hidden">от</span></label>
+              <input class="from-number" id="from-number" type="number" name="number" placeholder="100 руб."><span></span>
+              <label for="to-number"><span class="visually-hidden">до</span></label>
+              <input id="to-number" type="number" name="number" placeholder="– 500 руб.">
             </legend>
 
             <div class="line-prise-box">
@@ -145,7 +145,7 @@
       	    	<label for="ten">
       	  	      <input class="visually-hidden" id="ten" type="radio" name="variant-bold" disabled="">
       	  	      <span class="radio-indicator"></span>      	  	  
-      	  	      10%
+      	  	      до 10%
       	  	    </label>
       	  	  </li>
 
@@ -220,7 +220,7 @@
             <div class="products-hover"></div>            
       	  	<a class="products-a" href="#">              
       	  	  <img src="img/hit-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом">
-      	  	  <p class="products-prise">310&#8381;<span>/кг</span></p>
+      	  	  <p class="products-prise products-prise-katalog">310&#8381;<span>/кг</span></p>
       	  	  <div class="products-heading">
                 <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
               </div>
@@ -232,7 +232,7 @@
             <div class="products-hover"></div>              
       	  	<a class="products-a" href="#">
       	  	  <img src="img/hit-2.png" width="267" height="267" alt="Сливочно-кофейное">
-      	  	  <p class="products-prise">380&#8381;<span>/кг</span></p>
+      	  	  <p class="products-prise products-prise-katalog">380&#8381;<span>/кг</span></p>
       	  	  <div class="products-heading">
                 <p>Сливочно-кофейное с кусочками шоколада</p>
               </div>
@@ -244,7 +244,7 @@
             <div class="products-hover"></div>              
       	  	<a class="products-a" href="#">
       	  	  <img src="img/hit-3.png" width="267" height="267" alt="Сливочно-клубничное">
-      	  	  <p class="products-prise">355&#8381;<span>/кг</span></p>
+      	  	  <p class="products-prise products-prise-katalog">355&#8381;<span>/кг</span></p>
       	  	  <div class="products-heading">
                 <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
               </div>
@@ -256,7 +256,7 @@
             <div class="products-hover"></div>              
       	  	<a class="products-a" href="#">
       	  	  <img src="img/hit-4.png" width="267" height="267" alt="крем-брюле">
-      	  	  <p class="products-prise">415&#8381;<span>/кг</span></p>
+      	  	  <p class="products-prise products-prise-katalog">415&#8381;<span>/кг</span></p>
       	  	  <div class="products-heading">
                 <p>Сливочное крем-брюле с карамельной подливкой</p>
               </div>
@@ -268,7 +268,7 @@
             <div class="products-hover"></div>              
             <a class="products-a" href="#">
               <img src="img/hit-5.png" width="267" height="267" alt="Сливочно-клубничное">
-              <p class="products-prise">325&#8381;<span>/кг</span></p>
+              <p class="products-prise products-prise-katalog">325&#8381;<span>/кг</span></p>
               <div class="products-heading">
                 <p>Сливочное с брусничным <br>джемом</p>
               </div>
@@ -280,7 +280,7 @@
             <div class="products-hover"></div>              
             <a class="products-a" href="#">
               <img src="img/hit-6.png" width="267" height="267" alt="Сливочно-клубничное">
-              <p class="products-prise">410&#8381;<span>/кг</span></p>
+              <p class="products-prise products-prise-katalog">410&#8381;<span>/кг</span></p>
               <div class="products-heading">
                 <p>Сливочно-черничное с цельными ягодами черники</p>
               </div>
@@ -292,7 +292,7 @@
             <div class="products-hover"></div>              
             <a class="products-a" href="#">
               <img src="img/hit-7.png" width="267" height="267" alt="Сливочно-клубничное">
-              <p class="products-prise">375&#8381;<span>/кг</span></p>
+              <p class="products-prise products-prise-katalog">375&#8381;<span>/кг</span></p>
               <div class="products-heading">
                 <p>Сливочно-лимонное с карамельной присыпкой</p>
               </div>
@@ -304,7 +304,7 @@
             <div class="products-hover"></div>              
             <a class="products-a" href="#">
               <img src="img/hit-8.png" width="267" height="267" alt="Сливочно-клубничное">
-              <p class="products-prise">320&#8381;<span>/кг</span></p>
+              <p class="products-prise products-prise-katalog">320&#8381;<span>/кг</span></p>
               <div class="products-heading">
                 <p>Сливочное с шоколадной стружкой</p>
               </div>
@@ -316,7 +316,7 @@
             <div class="products-hover"></div>              
             <a class="products-a" href="#">
               <img src="img/hit-9.png" width="267" height="267" alt="Сливочно-клубничное">
-              <p class="products-prise">440&#8381;<span>/кг</span></p>
+              <p class="products-prise products-prise-katalog">440&#8381;<span>/кг</span></p>
               <div class="products-heading">
                 <p>Сливочно-ванильное с <br>кусочками шоколада</p>
               </div>
@@ -328,7 +328,7 @@
             <div class="products-hover"></div>              
             <a class="products-a" href="#">
               <img src="img/hit-10.png" width="267" height="267" alt="Сливочно-клубничное">
-              <p class="products-prise">435&#8381;<span>/кг</span></p>
+              <p class="products-prise products-prise-katalog">435&#8381;<span>/кг</span></p>
               <div class="products-heading">
                 <p>Сливочноe с ментоловым сиропом</p>
               </div>
@@ -340,7 +340,7 @@
             <div class="products-hover"></div>              
             <a class="products-a" href="#">
               <img src="img/hit-11.png" width="267" height="267" alt="Сливочно-клубничное">
-              <p class="products-prise">355&#8381;<span>/кг</span></p>
+              <p class="products-prise products-prise-katalog">355&#8381;<span>/кг</span></p>
               <div class="products-heading">
                 <p>Сливочное с кусочками черного шоколада</p>
               </div>
@@ -352,26 +352,26 @@
             <div class="products-hover"></div>              
             <a class="products-a" href="#">
               <img src="img/hit-12.png" width="267" height="267" alt="Сливочно-клубничное">
-              <p class="products-prise">420&#8381;<span>/кг</span></p>
+              <p class="products-prise products-prise-katalog">420&#8381;<span>/кг</span></p>
               <div class="products-heading">
                 <p>Сливочное с мятным <br>сиропом</p>
               </div>
             </a>
             <a class="button products-hover-button" href="#">быстрый просмотр</a>
           </li>    
-
       	</ul>
+
       	<div class="number-pages">
-		  <ul class="pages-list">
-			<li class="pages-item"><a><span class="arrow"></span></a></li>
-			<li class="pages-item active"><a href="#">1</a></li>
-			<li class="pages-item"><a href="#">2</a></li>
-			<li class="pages-item"><a href="#">3</a></li>
-			<li class="pages-item"><a href="#">4</a></li>
-			<li class="pages-item"><a href="#">5</a></li>
-			<li class="pages-item"><a href="#"><span class="arrow-2"></span></a></li>
-		  </ul>
-		</div>
+		      <ul class="pages-list">
+			      <li class="pages-item"><a><span class="arrow"></span></a></li>
+			      <li class="pages-item active"><a href="#">1</a></li>
+			      <li class="pages-item"><a href="#">2</a></li>
+			      <li class="pages-item"><a href="#">3</a></li>
+			      <li class="pages-item"><a href="#">4</a></li>
+			      <li class="pages-item"><a href="#">5</a></li>
+			      <li class="pages-item"><a href="#"><span class="arrow-2"></span></a></li>
+		      </ul>
+		    </div>
 
       </section>
     </main>
@@ -382,7 +382,7 @@
         <li class="social-item"><a href="#"><img src="img/inst.svg" width="32" height="32" alt="мы в инстаграм"></a></li>
         <li class="social-item"><a href="#"><img src="img/fb.svg" width="32" height="32" alt="мы в фейсбуке"></a></li>
         <li class="social-item"><a href="#"><img src="img/vk.svg" width="32" height="32" alt="мы в контакте"></a></li>
-        </ul>
+      </ul>
 
       <ul class="production">
         <li class="production-item active"><a href="#">Для поставщиков</a></li>
@@ -392,7 +392,7 @@
       </ul>
 
       <div class="html-academy">
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.svg" width="110" height="40" alt="Логотип htmlacademy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" width="110" height="40" alt="Логотип htmlacademy"></a>
         <p>Сделано в <span>HTML Academy</span> © 2019</p>
           
       </div>
